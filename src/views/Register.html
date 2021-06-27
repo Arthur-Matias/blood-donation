@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/register.css">
+</head>
+<body>
+    <nav>
+        <section>
+            <img src="/Drop.svg">            
+        </section>
+        <section>
+            <a href="/Home">home</a>
+            <a href="#">about us</a>
+            <a class="active" href="/Register">sign up</a>
+            <a href="/Login">sign in</a>
+            <a href="#">contact us</a>
+        </section>
+    </nav>
+    <main>
+        <form method="POST" id="registerForm">
+            <h2>sign up</h2>
+            <input type="text" required name="name" id="name" placeholder="Your full name">
+            <input type="email" required name="email" id="email" placeholder="Your email">
+            <section class="form-section">
+                <input type="password" required name="password" id="password" placeholder="Your password">
+                <input type="password" required id="passwordCheck" placeholder="Repeat the password">
+            </section>
+            <section>
+                <input required placeholder="Date of birth" style="margin-right: 1rem;" type="text" onfocus="(this.type='date')" name="birthday" id="birthday">
+                <input required type="text" name="socialNumber" id="socialNumber" placeholder="Your social number ID">
+            </section>
+            <section class="form-section">
+                <input name="postalCode" id="postalCode" required type="text" placeholder="Postal code">
+                <input name="country" id="country" required type="text" placeholder="Country">
+            </section>
+            <section class="form-section">
+                <input name="city" id="city" required type="text" placeholder="City">
+                <input name="state" id="state" required type="text" placeholder="State">
+            </section>
+            <section required name="bloodType" id="bloodType">
+                <h3>What is your blood type?</h3>
+               <div>
+                <label for="bloodType1" class="active">
+                    A+
+                    <input type="radio" name="bloodType" value="A+" id="bloodType1">
+                </label>
+                <label for="bloodType2">
+                    A-
+                    <input type="radio" name="bloodType" value="A-" id="bloodType2">
+                </label>
+                <label for="bloodType3">
+                    B+
+                    <input type="radio" name="bloodType" value="B+" id="bloodType3">
+                </label>
+                <label for="bloodType4">
+                    B-
+                    <input type="radio" name="bloodType" value="B-" id="bloodType4">
+                </label>
+                <label for="bloodType5">
+                    AB+
+                    <input type="radio" name="bloodType" value="AB+" id="bloodType5">
+                </label>
+                <label for="bloodType6">
+                    AB-
+                    <input type="radio" name="bloodType" value="AB-" id="bloodType6">
+                </label>
+                <label for="bloodType7">
+                    O+
+                    <input type="radio" name="bloodType" value="O+" id="bloodType7">
+                </label>
+                <label for="bloodType8">
+                    O-
+                    <input type="radio" name="bloodType" value="O-" id="bloodType8">
+                </label>
+               </div>
+            </section>
+            <label required id="termsLabel" for="terms">
+                <input type="checkbox" name="terms" id="terms">
+                <p>
+                    I agree with the 
+                    <b>Terms of Membership</b> 
+                    and
+                    <b>Terms of Use</b>
+                </p>
+            </label>
+            <button type="submit">
+                # Be a Hero
+            </button>
+        </form>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="/scripts/register.js"></script>
+</body>
+</html>

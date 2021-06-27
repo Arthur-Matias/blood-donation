@@ -1,0 +1,147 @@
+main{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--beige);
+    padding: 2rem;
+    max-width: 80vw;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+}
+form h2{
+    font-size: 3rem;
+    font-weight: 900;
+
+    color: var(--main-color);
+
+    text-transform: uppercase;
+}
+form section{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+#password{
+    margin-right: 1rem;
+}
+form section label{
+    margin-right: 1rem;
+}
+form input,
+form select{
+    height: 2.5rem;
+    border: none;
+    stroke: none;
+    outline: none;
+    /* background-color: var(--gray); */
+    padding: 0 1rem;
+    margin: .5rem 0;
+    border-radius: 6px;
+    width: 100%;
+}
+form select option{
+    color: var(--dark-gray);
+
+}
+form button{
+    min-height: 4rem;
+    width: fit-content;
+    background-color: var(--main-color);
+    font-size: 1.6rem;
+    border-radius: 6px;
+    outline: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: none;
+    padding: 1rem;
+    color: var(--white);
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: ease .2s;
+}
+form button:hover{
+    background-color: var(--white);
+    color: var(--main-color);
+    border: 3px solid var(--main-color);
+}
+select:focus, input:focus{
+    background-color: var(--white);
+}
+#bloodType{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#bloodType div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .5rem;
+}
+#bloodType label{
+    background-color: var(--gray);
+    padding: .5rem;
+    width: 5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bloodType label:hover,
+#bloodType label.active{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+#bloodType input{
+    display: none;
+}
+#termsLabel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+#termsLabel input{
+    margin: 0;
+    width: 2rem;
+    margin-right: 2rem;
+}
+#termsLabel p{
+    user-select: none;
+}
+#termsLabel p b{
+    font-weight: 600;
+    color: var(--main-color);
+    cursor: pointer;
+}
+#termsLabel p b:hover{
+    text-decoration: underline;
+}
+.form-section input:first-of-type{
+    margin-right: 1rem;
+}
+.form-section input:last-of-type{
+    margin-right: 0rem;
+}
+
+#postalCode,
+#city{
+    width: 20rem;
+}

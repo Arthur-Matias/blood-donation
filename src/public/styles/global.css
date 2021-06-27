@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --black: #333434;
+    --main-color: #9A191F;
+    --beige: #EAEAEA;
+    --white: #F2F2F3; 
+    --dark-gray: #727374; 
+    --gray: #BCBDC0; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: .4rem;
+    
+    grid-template-rows: 1fr 6fr 1fr;
+
+    background-color: var(--white);
+}
+
+nav{
+    grid-column-start: 1;
+    grid-column-end: 13;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav section:first-of-type{
+    margin-left: 4rem;
+}
+nav section:last-of-type{
+    margin-right: 4rem;
+}
+
+nav section img{
+    cursor: pointer;
+}
+
+nav section a{
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--dark-gray);
+
+    text-transform: uppercase;
+    transition: ease .2s;
+}
+
+nav section a.active,
+nav section a:hover{
+    color: var(--main-color);
+}
