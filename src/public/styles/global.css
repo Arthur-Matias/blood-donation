@@ -28,7 +28,7 @@ body{
     grid-template-columns: repeat(12, 1fr);
     column-gap: .4rem;
     
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 6fr;
 
     background-color: var(--white);
 }
@@ -69,4 +69,48 @@ nav section a{
 nav section a.active,
 nav section a:hover{
     color: var(--main-color);
+}
+
+form section label{
+    margin-right: 1rem;
+}
+form input,
+form select{
+    height: 2.5rem;
+    border: none;
+    stroke: none;
+    outline: none;
+    /* background-color: var(--gray); */
+    padding: 0 1rem;
+    margin: .5rem 0;
+    border-radius: 6px;
+    width: 100%;
+}
+form select option{
+    color: var(--dark-gray);
+
+}
+form button{
+    min-height: 4rem;
+    width: fit-content;
+    background-color: var(--main-color);
+    font-size: 1.6rem;
+    border-radius: 6px;
+    outline: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: none;
+    padding: 1rem;
+    color: var(--white);
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: ease .2s;
+}
+form button:hover{
+    background-color: var(--white);
+    color: var(--main-color);
+    border: 3px solid var(--main-color);
+}
+select:focus, input:focus{
+    background-color: var(--white);
 }

@@ -21,13 +21,21 @@
             <a href="#">contact us</a>
         </section>
     </nav>
-    <form action="/Login" method="post">
-        <input type="email" id="useremail">
-        <input type="password" name="userpassword" id="userpassword">
-        <button type="submit">
-            submit
-        </button>
-    </form>
+    <main>
+        <form action="/Login" method="post">
+            <div>sign in</div>
+            <input type="email" id="useremail" placeholder="Your email ...">
+            <input type="password" name="userpassword" id="userpassword" placeholder="Your Password ...">
+            <label>
+                <input type="checkbox" name="remember" id="remember">
+                <p>Remember my credentials on this computer</p>
+            </label>
+            <button type="submit">
+                # be a hero
+            </button>
+            <a href="#">Forgot your password?</a>
+        </form>
+    </main>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </body>
 </html>
