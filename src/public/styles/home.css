@@ -30,7 +30,7 @@ main h2 section b{
 }
 
 main img{
-    height: 70vh;
+    height: 65vh;
 }
 
 footer{
@@ -44,6 +44,7 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 2.5rem;
 }
 
 footer p{
